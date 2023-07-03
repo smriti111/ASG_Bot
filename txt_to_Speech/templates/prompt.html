@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}
+Prompt
+{%endblock%}
+
+{% block body%}
+
+
+<div class="container mb-3 py-5">
+    <form method="post" action="/">
+        {% csrf_token %} 
+        <h2 class="text-center"> Entry fields</h2>
+
+       
+             <div class="col-12 mb-3"></div>
+
+        <form class="row g-3">
+            <div class="col-12">
+                <label for="user_prompt" class="form-label"><h4>Hi user kindly enter you prompt in the below box</h4></label>
+                <input type="text" class="form-control" id="user_prompt" name ="user_prompt" placeholder="e.g. The Box" required>
+            </div>
+            
+            <div class="col-12 mb-3">
+            </div>
+
+            <div class="col-12 mb-3">
+                <button type="submit" class="btn btn-dark ">Submit</button>
+            </div>
+
+            <div class="col-12 mb-3">
+            </div>
+
+        
+            
+        </form>
+            
+        </div>
+        
+        
+
+        
+
+    </div>
+{% endblock%}
